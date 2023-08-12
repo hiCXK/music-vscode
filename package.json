@@ -1,0 +1,30 @@
+{
+  "name": "keyboard-sound-extension",
+  "version": "0.1.0",
+  "main": "out/extension.js",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.playSound",
+    "onDidChangeTextEditorSelection"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.playSound",
+        "title": "Play Keyboard Sound"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
